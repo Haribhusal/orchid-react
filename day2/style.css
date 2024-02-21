@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:link {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: blueviolet;
+}
+body {
+  background-color: #f8f8f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  padding: 10px 7%;
+  justify-content: space-between;
+  & .logo {
+    display: flex;
+    & img {
+      height: 40px;
+    }
+  }
+  & form {
+    display: flex;
+    gap: 10px;
+    & input {
+      padding: 10px 15px;
+      outline: none;
+      border: 1px solid #333;
+      &:focus {
+        border-color: blueviolet;
+      }
+    }
+    & button {
+      background-color: blueviolet;
+      padding: 10px 15px;
+      border: none;
+      color: white;
+    }
+  }
+
+  & .menu {
+    & nav {
+      display: flex;
+      & a {
+        padding: 10px 15px;
+        display: block;
+      }
+    }
+  }
+  & .buttons {
+    button {
+      padding: 10px 15px;
+      border-radius: 4 px;
+      background-color: blueviolet;
+      color: white;
+      border: none;
+    }
+  }
+}
+
+main {
+  & .news {
+    padding: 30px 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    & article {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+      }
+      & .info {
+        & button {
+          background-color: blueviolet;
+          color: white;
+          border: none;
+          padding: 5px 12px;
+          border-radius: 4px;
+        }
+        & p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    & img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+  }
+}
