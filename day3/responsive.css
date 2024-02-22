@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  header {
+    & form {
+      display: none;
+    }
+    & .menu {
+      & nav {
+        display: none;
+      }
+    }
+  }
+  main {
+    & .news {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  footer {
+    & .footer_menu,
+    .bottom {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
