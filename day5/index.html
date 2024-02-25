@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black">
+    <img src="./pic_bulboff.gif" id="bulb" alt="" />
+    <button id="on">On</button>
+    <button id="off">OFF</button>
+
+    <script>
+      let bulbcontainer = document.getElementById("bulb");
+      let on = document.getElementById("on");
+      let off = document.getElementById("off");
+      on.addEventListener("click", function () {
+        bulbcontainer.src = "pic_bulbon.gif";
+      });
+      off.addEventListener("click", function () {
+        bulbcontainer.src = "pic_bulboff.gif";
+      });
+    </script>
+  </body>
+</html>

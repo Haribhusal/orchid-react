@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #banner {
+        height: 500px;
+        width: 100%;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner"></div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur at
+      fugiat repellat ad eveniet maiores suscipit, accusamus eum aspernatur,
+      cumque placeat impedit voluptatibus velit reprehenderit natus! Aperiam
+      saepe est illum!
+    </p>
+    <button id="mybtn">Click me</button>
+
+    <script>
+      let banner = document.getElementById("banner");
+      let btn = document.getElementById("mybtn");
+      btn.addEventListener("click", function () {
+        banner.style.backgroundColor = "red";
+        this.style.backgroundColor = "red";
+        this.style.color = "white";
+        this.style.border = "none";
+        // this.style.display = "none";
+      });
+
+      banner.innerHTML = "<h1><u>This is a banner</u></h1>";
+      document.write("Hello, we are writing sth after doc");
+      console.log("dasdad");
+      window.alert(4 + 6);
+    </script>
+  </body>
+</html>
