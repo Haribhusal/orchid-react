@@ -1,7 +1,10 @@
+import Header from "./components/Header";
+import NewsSection from "./sections/NewsSection";
 function App() {
   return (
     <>
-      <h1 className="underline">Hello</h1>
+      <Header />
+      <NewsSection />
     </>
   );
 }
