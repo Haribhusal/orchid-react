@@ -11,9 +11,7 @@ function addTask() {
   var li = document.createElement("li");
   li.textContent = taskInput.value;
   taskList.appendChild(li);
-
   saveTasksToLocalStorage(taskInput.value);
-
   taskInput.value = ""; // Clear the input field
 }
 
