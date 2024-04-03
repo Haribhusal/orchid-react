@@ -7,9 +7,11 @@ const NewsSection = () => {
   console.log(typeof newsData);
   return (
     <div className="container max-w-screen-xl mx-auto">
-      <div className="heading">Latest News</div>
+      <div className="heading text-5xl font-bold text-center my-10">
+        Latest News
+      </div>
       <div className="newsList grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-        {newsData.map((news) => (
+        {newsData.slice(0, 6).map((news) => (
           <NewsComponent key={news.id} newsData={news} />
         ))}
       </div>
