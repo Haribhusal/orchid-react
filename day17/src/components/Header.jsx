@@ -2,6 +2,8 @@ import { Menu, Search, X } from "lucide-react";
 import Dropdown from "./Dropdown";
 import { useState } from "react";
 
+import { Button } from "react-bootstrap";
+
 function Header() {
   const [show, setShow] = useState(false);
   return (
@@ -60,9 +62,7 @@ function Header() {
 
         <div className="">
           <a href="#">
-            <button className="bg-custom text-white rounded-lg px-5 py-3 ">
-              Publish News
-            </button>
+            <Button variant="success">Publish News</Button>
           </a>
         </div>
       </div>

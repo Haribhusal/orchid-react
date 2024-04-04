@@ -1,10 +1,10 @@
-import Header from "./components/Header";
+import MyNavbar from "./components/Navbar";
 import NewsSection from "./sections/NewsSection";
 import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Header />
+      <MyNavbar />
       <NewsSection />
       <Footer />
     </>
